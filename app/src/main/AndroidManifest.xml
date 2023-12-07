@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hydrobill"
+        tools:targetApi="31">
+        <activity
+            android:name=".consumer_details"
+            android:exported="false" />
+        <activity
+            android:name=".addnewbarangay"
+            android:exported="false" />
+        <activity
+            android:name=".update_delete"
+            android:exported="false"
+            android:label="Delete or Edit Barangay"
+            android:parentActivityName=".list_of_consumer_in_barangay" />
+        <activity
+            android:name=".list_of_consumer_in_barangay"
+            android:exported="false"
+            android:label="List of Consumers of:"
+            android:parentActivityName=".consumers_activity" />
+        <activity
+            android:name=".readings_activity"
+            android:exported="false" />
+        <activity
+            android:name=".profile_activity"
+            android:exported="false" />
+        <activity
+            android:name=".consumers_activity"
+            android:exported="false" />
+        <activity
+            android:name=".forgot_password_page"
+            android:exported="false" />
+        <activity
+            android:name=".create_account_page"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".login_page"
+            android:exported="false" />
+        <activity
+            android:name=".splash_screen"
+            android:exported="true"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

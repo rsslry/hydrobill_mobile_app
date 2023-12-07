@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="password_edit_text" type="id" />
+    <item name="imageView" type="id" />
+    <item name="textView" type="id" />
+    <item name="email_edit_text" type="id" />
+    <item name="loginBtn" type="id" />
+    <item name="switchswitchShowPassword" type="id" />
+    <item name="forgot_password" type="id" />
+    <item name="textView5" type="id" />
+    <item name="create_Account_Btn_Textview" type="id" />
+    <item name="progress_bar" type="id" />
+    <item name="textView7" type="id" />
+    <item name="switchswitchShowPassword1" type="id" />
+    <item name="confirm_password_edit_text" type="id" />
+</resources>

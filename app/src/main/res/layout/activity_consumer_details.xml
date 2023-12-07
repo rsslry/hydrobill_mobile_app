@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".consumer_details"
+    tools:layout_editor_absoluteX="0dp"
+    android:background="@color/white"
+    tools:layout_editor_absoluteY="89dp">
+
+
+    <Button
+        android:id="@+id/doneBUTTON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/green"
+        android:text="Done"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meternumberEDT"
+        app:layout_constraintVertical_bias="0.406" />
+
+    <Button
+        android:id="@+id/cancelBUTTON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="@color/maroon"
+        android:clickable="true"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meternumberEDT"
+        app:layout_constraintVertical_bias="0.406" />
+
+    <EditText
+        android:id="@+id/lastnameEDT"
+        android:layout_width="362dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_textfield"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstnameEDT" />
+
+    <EditText
+        android:id="@+id/meternumberEDT"
+        android:layout_width="362dp"
+        android:layout_height="74dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_textfield"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barangaynameEDT"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/barangaynameEDT"
+        android:layout_width="172dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_textfield"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/provincenameEDT" />
+
+    <EditText
+        android:id="@+id/streetnameEDT"
+        android:layout_width="172dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_textfield"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toEndOf="@+id/barangaynameEDT"
+        app:layout_constraintTop_toBottomOf="@+id/citynameEDT" />
+
+    <EditText
+        android:id="@+id/citynameEDT"
+        android:layout_width="172dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_textfield"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toEndOf="@+id/provincenameEDT"
+        app:layout_constraintTop_toBottomOf="@+id/lastnameEDT" />
+
+    <EditText
+        android:id="@+id/provincenameEDT"
+        android:layout_width="172dp"
+        android:layout_height="74dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_textfield"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastnameEDT" />
+
+    <EditText
+        android:id="@+id/firstnameEDT"
+        android:layout_width="362dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_textfield"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/abc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="First name"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="@+id/firstnameEDT"
+        app:layout_constraintTop_toTopOf="@+id/firstnameEDT"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <TextView
+        android:id="@+id/bds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="Last name"
+        app:layout_constraintBottom_toBottomOf="@+id/lastnameEDT"
+        app:layout_constraintEnd_toEndOf="@+id/lastnameEDT"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="@+id/lastnameEDT"
+        app:layout_constraintTop_toTopOf="@+id/lastnameEDT"
+        app:layout_constraintVertical_bias="0.218" />
+
+    <TextView
+        android:id="@+id/er"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="Province"
+        app:layout_constraintBottom_toBottomOf="@+id/provincenameEDT"
+        app:layout_constraintEnd_toEndOf="@+id/provincenameEDT"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="@+id/provincenameEDT"
+        app:layout_constraintTop_toTopOf="@+id/provincenameEDT"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <TextView
+        android:id="@+id/wew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="City"
+        app:layout_constraintBottom_toBottomOf="@+id/citynameEDT"
+        app:layout_constraintEnd_toEndOf="@+id/citynameEDT"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="@+id/citynameEDT"
+        app:layout_constraintTop_toTopOf="@+id/citynameEDT"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="Barangay"
+        app:layout_constraintBottom_toBottomOf="@+id/barangaynameEDT"
+        app:layout_constraintEnd_toEndOf="@+id/barangaynameEDT"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="@+id/barangaynameEDT"
+        app:layout_constraintTop_toTopOf="@+id/barangaynameEDT"
+        app:layout_constraintVertical_bias="0.218" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="Street"
+        app:layout_constraintBottom_toBottomOf="@+id/streetnameEDT"
+        app:layout_constraintEnd_toEndOf="@+id/streetnameEDT"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="@+id/streetnameEDT"
+        app:layout_constraintTop_toTopOf="@+id/streetnameEDT"
+        app:layout_constraintVertical_bias="0.218" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="Meter Number"
+        app:layout_constraintBottom_toBottomOf="@+id/meternumberEDT"
+        app:layout_constraintEnd_toEndOf="@+id/meternumberEDT"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="@+id/meternumberEDT"
+        app:layout_constraintTop_toTopOf="@+id/meternumberEDT"
+        app:layout_constraintVertical_bias="0.181" />
+</androidx.constraintlayout.widget.ConstraintLayout>
